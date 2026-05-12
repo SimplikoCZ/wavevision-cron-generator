@@ -5,9 +5,13 @@
   "description": "Nette DI Extension for generating cron files",
   "config": {
     "platform": {
-      "php": "7.4"
+      "php": "8.5"
     },
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "phpstan/extension-installer": true
+    }
   },
   "autoload": {
     "psr-4": {
@@ -25,12 +29,29 @@
       "email": "jakub.filla@wavevision.com"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:SimplikoCZ/wavevision-coding-standard.git",
+      "no-api": true
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:SimplikoCZ/wavevision-nette-tests.git",
+      "no-api": true
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/SimplikoCZ/wavevision-utils.git"
+    }
+  ],
   "require": {
+    "php": "^8.1",
     "hollodotme/crontab-validator": "^2.0",
-    "nette/di": "^3.0"
+    "nette/di": "^3.2"
   },
   "require-dev": {
-    "wavevision/coding-standard": "^6.0",
-    "wavevision/nette-tests": "^3.1"
+    "wavevision/coding-standard": "^7.0",
+    "wavevision/nette-tests": "^4.0"
   }
 }

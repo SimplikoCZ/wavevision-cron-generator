@@ -1,5 +1,6 @@
 /vendor/
 /temp/
+/.phpunit.cache/
 
 /.idea/**
 !/.idea/codeStyles/
