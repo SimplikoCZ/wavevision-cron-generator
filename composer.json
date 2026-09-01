@@ -1,5 +1,5 @@
 {
-  "name": "wavevision/cron-generator",
+  "name": "simplikocz/cron-generator",
   "type": "library",
   "license": "MIT",
   "description": "Nette DI Extension for generating cron files",
